@@ -15,7 +15,7 @@ app.use("/api/available_barbers",available_barbers_routes);
 
 const start = async()=>{
     try{
-        await connectDB();
+        await connectDB(process.env.MDB_url);
         app.listen(PORT, ()=>{
             console.log(PORT,'Yes I am connected');
         });
