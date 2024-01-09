@@ -4,8 +4,8 @@ const { options } = require('../routes/available_barbers');
 
 const connectDB = (uri)=>{
     return mongoose.connect(uri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
     });
 }
 
